@@ -44,6 +44,7 @@ namespace Cocoa.Lib.Util
 
         /// <summary>
         /// 라이브러리가 제공하는 공용 인스턴스. 첫 접근 시 DontDestroyOnLoad GameObject 를 만듭니다.
+        /// 앱 종료 중에는 null 을 반환하므로 종료 시점에 접근하는 코드는 확인이 필요합니다.
         /// </summary>
         public static CoroutineHandler Default
         {
@@ -52,6 +53,12 @@ namespace Cocoa.Lib.Util
                 if (_defaultInstance != null)
                 {
                     return _defaultInstance;
+                }
+
+                //== 종료 중에 만들면 정리되지 않은 GameObject 가 남습니다.
+                if (AppLifecycle.IsQuitting)
+                {
+                    return null;
                 }
 
                 GameObject host = new GameObject("[Cocoa.Lib] CoroutineHandler");
