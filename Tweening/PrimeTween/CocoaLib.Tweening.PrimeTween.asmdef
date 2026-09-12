@@ -1,0 +1,25 @@
+{
+    "name": "CocoaLib.Tweening.PrimeTween",
+    "rootNamespace": "Cocoa.Lib.Tweening",
+    "references": [
+        "CocoaLib",
+        "PrimeTween.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "COCOALIB_PRIMETWEEN"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.kyrylokuzyk.primetween",
+            "expression": "",
+            "define": "COCOALIB_PRIMETWEEN"
+        }
+    ],
+    "noEngineReferences": false
+}
