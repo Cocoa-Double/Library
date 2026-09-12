@@ -1,0 +1,25 @@
+{
+    "name": "CocoaLib.Tweening.DOTween",
+    "rootNamespace": "Cocoa.Lib.Tweening",
+    "references": [
+        "CocoaLib",
+        "DOTween"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "COCOALIB_DOTWEEN"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.demigiant.dotween",
+            "expression": "",
+            "define": "COCOALIB_DOTWEEN"
+        }
+    ],
+    "noEngineReferences": false
+}
