@@ -1,0 +1,26 @@
+{
+    "name": "CocoaLib.Save.Newtonsoft",
+    "rootNamespace": "Cocoa.Lib.Save",
+    "references": [
+        "CocoaLib"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Newtonsoft.Json.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "COCOALIB_NEWTONSOFT"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.nuget.newtonsoft-json",
+            "expression": "",
+            "define": "COCOALIB_NEWTONSOFT"
+        }
+    ],
+    "noEngineReferences": false
+}
